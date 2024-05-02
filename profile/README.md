@@ -1,6 +1,3 @@
-Bekerja dengan Tujuan Baik
-Lahir sejak tahun 1965, Harian Kompas terus konsisten untuk memberikan arah dan tujuan untuk Indonesia. Di tengah maraknya disrupsi dan krisis global, Harian Kompas tetap setia dengan idealismenya untuk mencerdaskan bangsa. Munculnya Kompas.id juga menjadi tanda transformasi Harian Kompas menjawab kebutuhan digital masyarakat.
+Harian Kompas adalah perusahaan media yang berkantor pusat di Jakarta, Indonesia. Kompas diterbitkan oleh PT Kompas Media Nusantara yang merupakan bagian dari kelompok usaha Kompas Gramedia (KG), yang didirikan oleh PK. Ojong (almarhum) dan Jakob Oetama (almarhum) sejak 28 Juni 1965.
 
-Dengan bergabung bersama Kompas, berarti Anda turut peduli pada kemajuan Indonesia. Di Harian Kompas, bekerja tidak hanya untuk kesejahteraan pribadi, tetapi juga untuk kepentingan orang banyak. Di Kompas, bekerja tidak terasa seperti bekerja, karena semua dijalani bersama layaknya keluarga sendiri.
-
-Sejalan dengan nilai “Amanat Hati Nurani Rakyat”, Kompas percaya bahwa bangsa Indonesia punya potensi yang besar untuk bersaing, dimulai dari rakyat, untuk rakyat.
+Mengusung semboyan "Amanat Hati Nurani Rakyat", Kompas dikenal sebagai sumber informasi tepercaya, akurat, dan mendalam. Nikmati sajian jurnalistik berkualitas di Kompas.id.
