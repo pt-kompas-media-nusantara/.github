@@ -1,11 +1,105 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# .github/dependabot.yml
+# Konfigurasi Dependabot untuk repo dengan PHP (Composer), Node.js (npm),
+# Golang (Go modules), GitHub Actions, dan Dockerfile.
+#
+# Catatan: Dependabot config berlaku PER-REPOSITORY, bukan org-level.
+# Letakkan file ini di .github/dependabot.yml pada setiap repository.
+# Ecosystem yang tidak dipakai di suatu repo akan diabaikan otomatis
+# (tidak error), jadi template ini aman dipakai di semua repo organisasi.
 
 version: 2
+
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # ── PHP / Composer ──────────────────────────────────────────────
+  - package-ecosystem: "composer"
+    directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "php"
+    commit-message:
+      prefix: "deps(composer)"
+    groups:
+      composer-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  # ── Node.js / npm (juga mendukung yarn & pnpm) ─────────────────
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "nodejs"
+    commit-message:
+      prefix: "deps(npm)"
+    groups:
+      npm-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  # ── Golang / Go modules ────────────────────────────────────────
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "golang"
+    commit-message:
+      prefix: "deps(go)"
+    groups:
+      gomod-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  # ── GitHub Actions ─────────────────────────────────────────────
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ci"
+    commit-message:
+      prefix: "ci(actions)"
+    groups:
+      actions-all:
+        patterns:
+          - "*"
+
+  # ── Docker / Dockerfile ────────────────────────────────────────
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "07:00"
+      timezone: "Asia/Jakarta"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "docker"
+    commit-message:
+      prefix: "deps(docker)"
